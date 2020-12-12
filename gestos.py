@@ -8,9 +8,9 @@ def detecta_gestos(sig):
     if not gesto:
         gesto = gatilho(sig)
     if not gesto:
-        gesto = aumentar_volume(sig)
+        gesto = aumenta_volume(sig)
     if not gesto:
-        gesto = diminuir_volume(sig)
+        gesto = abaixa_volume(sig)
     return gesto
 
 def play_pause(sig):
@@ -28,7 +28,7 @@ def proxima_musica(sig):
     if (min(sig.az) < min_az) and (max(sig.ay) > max_ay):
         return "proxima"
 
-def voltar_musica(sig):
+def volta_musica(sig):
     min_ay = -0.4
     min_az = 0.4
     if (min(sig.az) < min_az) and (min(sig.ay) < min_ay):
