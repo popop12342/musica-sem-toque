@@ -73,7 +73,7 @@ def mpu6050_conv():
 
 
 # MPU6050 registers
-MPU6050_ADDR = 0x69
+MPU6050_ADDR = 0x68
 PWR_MGMT_1   = 0x6B
 SMPLRT_DIV   = 0x19
 CONFIG       = 0x1A
